@@ -1,5 +1,5 @@
 {% set name = "CADET-Python" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/cadet/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e3b12b1662dbab71374453f320c4d13cbd4175a8d89875e5dc496802f9b08782
+  sha256: 3c894c880862ff97ecd1c18d0cbaf463b6d9c72e598d272df4705a460b31a96a
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ test:
 
 about:
   home: https://github.com/cadet/CADET-Python
-  summary: File based Python Interface for CADET 
+  summary: File based Python Interface for CADET
   license: BSD-3-Clause
   license_file: LICENSE
 
