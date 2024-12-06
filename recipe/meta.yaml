@@ -1,5 +1,5 @@
 {% set name = "CADET-Python" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/cadet/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 3c894c880862ff97ecd1c18d0cbaf463b6d9c72e598d272df4705a460b31a96a
+  sha256: 0a84a4eb1e1441eb6e6c95b9aaadc018440f8e955102f6db4f495759b1ce8534
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - h5py
     - filelock
-    - cadet
+    - cadet >=5.0.2
 
 test:
   imports:
